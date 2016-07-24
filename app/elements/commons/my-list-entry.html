@@ -1,0 +1,35 @@
+<!--
+A comment describing this element
+
+Example:
+
+    <my-elem></my-elem>
+
+Example:
+
+    <my-elem>
+      <h2>Hello my-elem</h2>
+    </my-elem>
+
+@demo demo/index.html
+-->
+
+<dom-module id="my-list-entry">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <my-list></my-list>
+        List entry
+    </template>
+    <script>
+        Polymer({
+            is: 'my-list-entry',
+            attached: function() {
+                app.lazyLoadPolymerAndElements('elements/my-list/my-list.html');
+            }
+        });
+    </script>
+</dom-module>
