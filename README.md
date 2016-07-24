@@ -8,7 +8,7 @@ An experimental lazy loading pattern for polymer apps
   - [app-router](https://github.com/erikringsmuth/app-router)
   - Gulp - Vulcanize
 
-##### Inspiration 
+##### Inspiration
   - https://aerotwist.com/blog/polymer-for-the-performance-obsessed/
   - https://github.com/angular-ui/ui-router
 
@@ -18,10 +18,8 @@ While creating a huge polymer app, simple vulcanize concats all files into a sin
 ##### Solution
   - Divide project into modules
   - `elements.html` reffers all common elements
-  - Create entry elemets for submodules and put them alongside commmon elements eg: `my-list-entry.html`
-  - Make use of `aerotwist's lazyLoadPolymerAndElements()` function
-  - Load entry elements in routes
   - Write gulp tasks to vulcanize each module induvidually
+  - Load submodule elements in app-router routes
 
 ##### To Do:
   - Check if works with sub routes

@@ -28,7 +28,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <elem-one></elem-one>
       </template>
     </ul>
-    <elem-two></elem-two>
+    <app-router mode="hash">
+      <!-- matches an exact path -->
+      <app-route path="/list/test" element="elem-two" bindRouter>
+      </app-route>
+
+    </app-router>
   </template>
 
   <script>
