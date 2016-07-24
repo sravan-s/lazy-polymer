@@ -2,7 +2,7 @@
 
 An experimental lazy loading pattern for polymer apps
 
-##### Compoenents used:
+##### Tools used:
   - Polymer
   - [generator-polymer](https://github.com/yeoman/generator-polymer)
   - [app-router](https://github.com/erikringsmuth/app-router)
@@ -13,7 +13,7 @@ An experimental lazy loading pattern for polymer apps
   - https://github.com/angular-ui/ui-router
 
 ##### Problem
-Creating a huge polymer app, simple vulcanize concats all files into a single file. In an application with 7 - 8 submodules, loading all the modules at once isn't a great idea, especially when 2 or 3 modules has some fancy exclusive content that normally people won't use. In this experiment, we are trying to load submodules on the fly. The app structure was made with generator-polymer yeoman scaffold.
+While creating a huge polymer app, simple vulcanize concats all files into a single file. In an application with 7 - 8 submodules, loading all the modules at once isn't a great idea, especially when 2 or 3 modules has some fancy exclusive content that normally people won't use. In this experiment, we are trying to load submodules on the fly. The app structure was made with generator-polymer yeoman scaffold.
 
 ##### Solution
   - Divide project into modules
